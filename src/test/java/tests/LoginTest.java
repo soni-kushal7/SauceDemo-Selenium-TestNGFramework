@@ -26,6 +26,10 @@ public class LoginTest extends BaseTest {
         loginPage.login("locked_out_user", "secret_sauce");
         loginPage.getLoginBtn().click();
         
+
+
+
+
         Assert.assertTrue(driver.getPageSource().contains("Epic sadface"), "Error message not found");
     }
 }
